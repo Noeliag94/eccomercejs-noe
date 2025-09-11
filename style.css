@@ -15,3 +15,193 @@ p {
   margin-top: 20px;
   text-align: center;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0e9e8f1; 
+  color: #382626e3;
+  line-height: 1.6;
+}
+
+/* -HEADER - */
+
+.index-header {
+  background: linear-gradient(135deg, #f1d5e0d8, #e9afe4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #e47aafdc;
+  position: relative;
+  padding: 3rem 1rem;
+}
+
+.index-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.55); /* oscurece la foto */
+}
+
+.index-header-flex {
+  position: relative;
+  z-index: 2;
+}
+/* - NAVBAR -*/
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  background-color: #f7cfdef3;
+  padding: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7a2c58;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d63384;
+}
+
+/* - MAIN -*/
+.index-main {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.productosdisponibles-título {
+  font-size: 2rem;
+  color: #88295ffb;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.productosdisponibles-título::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff9eb5;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* - PRODUCTOS QUE OFRECE SIN CULPA  - */
+.todaslasimagenesdelosproductos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.todaslasimagenesdelosproductos-container section {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.todaslasimagenesdelosproductos-container section:hover {
+  transform: translateY(-5px);
+}
+
+.todaslasimagenesdelosproductos-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.todaslasimagenesdelosproductos-container h3 {
+  color: #d63384;
+  margin-bottom: 0.5rem;
+}
+
+.todaslasimagenesdelosproductos-container p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.todaslasimagenesdelosproductos-container button {
+  background-color: #ff9eb5;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+.todaslasimagenesdelosproductos-container button:hover {
+  background-color: #d63384;
+}
+
+/* - SLOGAN con animación - desvanece */
+
+.slogan-animado1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7a2c58;
+  margin: 2rem 0;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* -FOOTER -*/
+footer {
+  background-color: #ffe0ec;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer h4 {
+  color: #7a2c58;
+  margin-bottom: 0.5rem;
+}
+
+.footerderechos {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footercontainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-container-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logotipoFooter {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logotipoFooter:hover {
+  transform: scale(1.2);
+}

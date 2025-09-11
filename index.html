@@ -13,28 +13,153 @@
            Objetivo: Proyecto para primer entrega-->
 </head>
 <body>
-    
-    <header></header>
+    <header class="index-header">
+      <div class="oscurecer-fondo">
+        <div class="index-header-flex">   
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed top-0 test">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img 
+        class="logotipo" 
+        src="./imagenes/logotipo.jpg" 
+        alt="Descripcion de la imagen"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
 <h1>🍰 Sin Culpa MDQ 🍰 </h1>
 <h2>Bienvenidos a mi Web de Delicias</h2>
  <p>Emprendimiento realizado con mucho amor y dedicación, cocinando delicias para comerlas sin culpa 🎂</p>
+ <p>Todo lo que nos encargues será cocinado con la mejor materia prima para que disfrutes hasta en el último bocado</p>
 </header>
 
  <nav>
     <ul>
         <li><a href="">Tortas</a></li>
         <li><a href="">Postres</a></li>
-        <li><a href="">Mini postres/Shots</a></li>
-        <li><a href="">Bombonería</a></li>
+        <li><a href="./html/shotsyvasos.html">Mini postres/Shots</a></li>
+        
     </ul>
 </nav>
     <main>
-        
-        <section id="productos">
-            <h3>Nuestros Productos</h3>
-            <p>Próximamente verás el catálogo de nuestras delicias ✨</p>
-        </section>
-    </main>
+<main class="index-main px-1">
 
-</body>
-</html>
+ <h2 class="productosdisponibles-título">PRODUCTOS DISPONIBLES</h2>
+        
+
+<section class="todaslasimagenesdelosproductos-container">
+            <section class="tortacumple">
+
+<h3>Torta Cumpleaños</h3> 
+
+   <img src="./imagenes/torta.png" alt="Imagen de Torta de Cumpleaños">
+
+    <p class="tortaprecio mt-2">Valor unitario $60000</p>
+
+   <button class="botoncomprartorta">Comprar</button>
+
+   </section>
+
+   <section class="cheesecake">
+
+<h3>Cheesecake Chocolate</h3>
+
+   <img src="./imagenes/cheeschoco.png" alt="Cheesecake">
+
+    <p class="cheesecakeprecio mt-2"> Unitario $45000</p>
+
+   <button class="botoncomprarcheescake">Comprar</button>
+   </section>
+
+   <section class="shots">
+ <h3>Shots Dulces</h3>  
+
+    <img src="./imagenes/vasos.png" alt="Shots Dulces - Diversos sabores">
+
+    <a href="./html/shotsyvasos.html">
+    <button class="botoncomprarshots mt-2">Consultar</button>
+</a>
+
+      </section>
+
+<section class="vasooreos">
+  <h3>Vasos Oreos</h3>  
+
+    <img class="vasosoreos" src="./imagenes/vasooreo.png" alt="Imagen de Vaso Oreo">
+
+    <a href="./html/shotsyvasos.html">
+    <button class="botoncomprarshots mt-2">Consultar</button>
+</a>   
+
+</section>
+
+<section id="carrito" class="carrito">
+  <!-- Esta es la sección donde se incorpora el carrito a la página  -->
+</section>
+
+<section>   <!-- Esta es la sección donde explico los procedimientos para una torta personalizada  -->
+  <h3>¿Cómo preparo una torta personalizada?:</h3>
+  <ul id="pasosTorta"></ul>
+</section>
+
+</main>
+
+<p class="slogan-animado1">¡Delicias siempre en tu mesa!</p>
+
+  <footer class="p-1">    
+ <p class="footerderechos py-3 m-0">-Todos los derechos reservados-</p>
+
+<div class="footercontainer-grid">
+<div class="footercontainer-primerhijo">
+    <h4>¿Dónde nos encontramos?</h4>
+    <p>Bolivar 2287, B7600 Mar del Plata, Provincia de Buenos Aires</p>
+</div>
+<div class="footercontainer-segundohijo">
+  <h4>Nuestro Email</h4>
+  <p>noeliamelinag@hotmail.com</p>
+</div>
+<div class="footercontainer-tercerhijo">
+  <h4>Nuestro Celular</h4>
+   <p>+549 2235462757</p></div>
+</div>
+
+  
+ <p class="redessociales">Nuestras Redes Sociales</p>
+ 
+ <div class="footer-container-flex">
+
+  <a href="https://www.instagram.com/sinculpamdq/?next=%2Fsinculpamdq%2F" target="_blank" rel="noopener"> 
+  <img class="logotipoFooter" src="./imagenes/logoinstagram.webp" alt="Logotipo Instagram Empresa" />
+</a>
+ </div>
+
+ <p>Si tenes dudas, consultanos. Con gusto, te podemos asesorar.</p>
+
+    <div class="card shadow border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-4 text-info fw-semibold">Formulario de contacto</h5>
+        <form id="form-contacto" action="https://formsubmit.co/noeliamelinag@hotmail.com" method="POST">
+          <div class="mb-3">
+            <input type="text" id="nombre" class="form-control" placeholder="Tu Nombre" name="nombre" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" id="telefono" class="form-control" placeholder="Tu Teléfono" name="telefono">
+          </div>
+          <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Tu Email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <textarea  id="mensaje" class="form-control" rows="4" placeholder="Tu mensaje" name="mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info text-white px-4">Enviar mensaje</button>
+          <div id="errores"></div>
+        </form>
+        <input type="hidden" name="_captcha" value="false">
+      </div>
+
+ 
+  </footer> 
+ </body>
+</html> 
