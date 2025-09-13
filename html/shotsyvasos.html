@@ -2,10 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Opciones de los vasos y shots que ofrecemos Sin Culpa Mdq">
+    <title>Shots y Vasos de Postres</title>
+    <script src="../script.js" defer></script>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-    
-</body>
-</html>
+
+   <header class="vasos-header">
+      <div class="oscurecer-fondo">
+        <div class="index-header-flex">
+
+<nav class="navbar navbar-expand-lg w-100 position-fixed top-0 test" style="background-color: #e4bf9c;">
+  <div class="container">
+    <a class="navbar-brand" href="shotsyvasos.html">
+                <img 
+           class="logotipo"  
+           src="../imagenes/logotipo.jpg"
+           alt="Logotipo de la Marca"/>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">Navbar</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+         <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shotsyvasos.html">Nuestros Postres</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscador</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+        </div>
+        
+ <header class="text-center py-5" style="background: linear-gradient(135deg,#f1d5e0,#e9afe4);">
+    <h1 class="mb-2">SIN CULPA MDQ</h1>
+    <p>Los vasos y shots son tu mejor opción para tu mesa dulce o un antojito</p>
+  </header>
+
+  <main class="container my-5 productos">
+    <h2 class="text-center mb-4" style="background: linear-gradient(135deg,#f1bf9e,#f58f94);">POSTRES DISPONIBLES</h2>
+
+    <!-- productos (grid) + carrito  -->
+    <div class="productos-layout" style="display:grid;">
+      
+      <!-- GRID DE PRODUCTOS -->
+      <section class="todaslasimagenesdelosproductos-container">
+        <div class="row g-4"> 
+           
+
+       <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasos.png" class="card-img-top" alt="Shots dulces">
+          <div class="card-body text-center">
+            <h5 class="card-title">Shots Dulces - Sabores Clásicos</h5>
+            <p class="card-text">$28000</p>
+            <button class="btn btn-pink btn-add" data-id="3">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+             <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/shotvariedadarriba.png" class="card-img-top" alt="Shots seleccion">
+          <div class="card-body text-center">
+            <h5 class="card-title">Shots Dulces - Selección del Cliente</h5>
+            <p class="card-text">$33000</p>
+            <button class="btn btn-pink btn-add" data-id="4">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasokinder.png" class="card-img-top" alt="Vaso Kinder">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso Kinder</h5>
+            <p class="card-text">$14.000</p>
+            <button class="btn btn-pink btn-add" data-id="5">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasocafe.png" class="card-img-top" alt="Vaso Cafe">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso Cafe</h5>
+            <p class="card-text">$12.000</p>
+            <button class="btn btn-pink btn-add" data-id="6">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasofrutilla.png" class="card-img-top" alt="Vaso Frutilla">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso Frutilla</h5>
+            <p class="card-text">$12.000</p>
+            <button class="btn btn-pink btn-add" data-id="7">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+             <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasooreo.png" class="card-img-top" alt="Vaso Oreo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso Oreo</h5>
+            <p class="card-text">$12.000</p>
+            <button class="btn btn-pink btn-add" data-id="8">Agregar</button>
+          </div>
+        </div>
+      </div>       
+
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="../imagenes/vasochocotorta.png" class="card-img-top" alt="Vaso Chocotorta">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso Chocotorta</h5>
+            <p class="card-text">$13.000</p>
+            <button class="btn btn-pink btn-add" data-id="9">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARRITO  -->
+      <aside id="carrito" class="carrito p-3">
+      </aside>
+</section>
+
+</main>
+
+<p class="slogan-animado1">¡Delicias siempre en tu mesa!</p>
+
+  <footer class="p-1">    
+ <p class="footerderechos py-3 m-0">-Todos los derechos reservados-</p>
+
+<div class="footercontainer-grid">
+<div class="footercontainer-primerhijo">
+    <h4>¿Dónde nos encontramos?</h4>
+    <p>Bolivar 2287, B7600 Mar del Plata, Provincia de Buenos Aires</p>
+</div>
+<div class="footercontainer-segundohijo">
+  <h4>Nuestro Email</h4>
+  <p>noeliamelinag@hotmail.com</p>
+</div>
+<div class="footercontainer-tercerhijo">
+  <h4>Nuestro Celular</h4>
+   <p>+549 2235462757</p></div>
+</div>
+
+  
+ <p class="redessociales">Nuestras Redes Sociales</p>
+ 
+ <div class="footer-container-flex">
+
+  <a href="https://www.instagram.com/sinculpamdq/?next=%2Fsinculpamdq%2F" target="_blank" rel="noopener"> 
+  <img class="logotipoFooter" src="../imagenes/logoinstagram.webp" alt="Logotipo Instagram Sin Culpa" />
+</a>
+ </div>
+
+ 
+  </footer> 
+ </body>
+</html> 

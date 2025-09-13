@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Todos los Postres disponibles y ofrecidos por Sin Culpa en Mar del Plata">
+    <meta name="keywords" content="Sin Culpa Mdq, postres en Mar del Plata, shots dulces, productos para tus mesas dulces y de cumpleaños">
+    <title>Coderhouse Sin Culpa - Postres</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
       <!-- Trabajo Práctico de JavaScript para Coderhouse
@@ -23,7 +24,7 @@
       <img 
         class="logotipo" 
         src="./imagenes/logotipo.jpg" 
-        alt="Descripcion de la imagen"/>
+        alt="Logotipo de Sin Culpa"/>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -54,45 +55,47 @@
 
 <h3>Torta Cumpleaños</h3> 
 
-   <img src="./imagenes/torta.png" alt="Imagen de Torta de Cumpleaños">
+       <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./imagenes/torta.png" class="card-img-top" alt="Imagen de Torta de Cumpleaños">
+          <div class="card-body text-center">
+            <h5 class="card-title">Torta de Cumpleaños</h5>
+            <p class="tortaprecio mt-2">Valor $80000</p>
+            <button class="btn btn-pink btn-add" data-id="1">Agregar</button>
+          </div>
+        </div>
+      </div>
+ </section>
 
-    <p class="tortaprecio mt-2">Valor unitario $60000</p>
-
-   <button class="botoncomprartorta">Comprar</button>
-
-   </section>
 
    <section class="cheesecake">
 
-<h3>Cheesecake Chocolate</h3>
+    <h3>Cheseecake Chocolate</h3> 
 
-   <img src="./imagenes/cheeschoco.png" alt="Cheesecake">
+       <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./imagenes/cheeschoco.png" class="card-img-top" alt="Imagen de Cheesecake">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cheesecake de Chocolate</h5>
+            <p class="tortaprecio mt-2">Valor $65000</p>
+            <button class="btn btn-pink btn-add" data-id="2">Agregar</button>
+          </div>
+        </div>
+      </div>
+ </section>
 
-    <p class="cheesecakeprecio mt-2"> Unitario $45000</p>
+ <section class="shots">
+  <h3>Shots Dulces</h3>  
+  <img src="./imagenes/vasos.png" alt="Shots Dulces - Diversos sabores">
 
-   <button class="botoncomprarcheescake">Comprar</button>
-   </section>
-
-   <section class="shots">
- <h3>Shots Dulces</h3>  
-
-    <img src="./imagenes/vasos.png" alt="Shots Dulces - Diversos sabores">
-
-    <a href="./html/shotsyvasos.html">
-    <button class="botoncomprarshots mt-2">Consultar</button>
-</a>
-
-      </section>
+  <a href="./html/shotsyvasos.html" class="botoncomprarshots mt-2">Consultar</a>
+</section>
 
 <section class="vasooreos">
   <h3>Vasos Oreos</h3>  
+  <img class="vasosoreos" src="./imagenes/vasooreo.png" alt="Imagen de Vaso Oreo">
 
-    <img class="vasosoreos" src="./imagenes/vasooreo.png" alt="Imagen de Vaso Oreo">
-
-    <a href="./html/shotsyvasos.html">
-    <button class="botoncomprarshots mt-2">Consultar</button>
-</a>   
-
+  <a href="./html/shotsyvasos.html" class="botoncomprarshots mt-2">Consultar</a>
 </section>
 
 <section id="carrito" class="carrito">
@@ -131,7 +134,7 @@
  <div class="footer-container-flex">
 
   <a href="https://www.instagram.com/sinculpamdq/?next=%2Fsinculpamdq%2F" target="_blank" rel="noopener"> 
-  <img class="logotipoFooter" src="./imagenes/logoinstagram.webp" alt="Logotipo Instagram Empresa" />
+  <img class="logotipoFooter" src="./imagenes/logoinstagram.webp" alt="Logotipo Instagram Sin Culpa" />
 </a>
  </div>
 

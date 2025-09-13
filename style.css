@@ -2,6 +2,7 @@ body {
     background-color: rgba(245, 184, 235, 0.747);
     font-family: Arial, sans-serif;
      padding: 20px;
+     padding-top: 80px
 
 }
 
@@ -24,8 +25,8 @@ p {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0e9e8f1; 
-  color: #382626e3;
+  background-color: #c2aba7f1; 
+  color: #9e7e7ee3;
   line-height: 1.6;
 }
 
@@ -39,7 +40,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: #e47aafdc;
+  color: #8d1551fa;
   position: relative;
   padding: 3rem 1rem;
 }
@@ -48,7 +49,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0,0,0,0.55); /* oscurece la foto */
+  background-color: rgba(138, 81, 81, 0.55); /* oscurece la foto */
 }
 
 .index-header-flex {
@@ -56,6 +57,9 @@ body {
   z-index: 2;
 }
 /* - NAVBAR -*/
+
+
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -99,7 +103,83 @@ nav ul li a:hover {
   border-radius: 2px;
 }
 
+
 /* - PRODUCTOS QUE OFRECE SIN CULPA  - */
+
+.productos-layout {
+   gap: 24px; 
+  }
+
+
+/* grid de tarjetas */
+.todaslasimagenesdelosproductos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+
+/* tarjeta producto */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* boton rosa */
+.btn-pink {
+  background: linear-gradient(135deg,#ff9eb5,#ff5c8a);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight:600;
+}
+
+/* carrito */
+.carrito {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  min-height:160px;
+}
+
+/* lista del carrito */
+.carrito .item {
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  align-items:center;
+  padding:8px 0;
+  border-bottom:1px solid #f0f0f0;
+}
+
+.carrito .item-controls button {
+  margin-left:6px;
+  background:#df7e7e;
+  color:#fff;
+  border:none;
+  padding:6px 8px;
+  border-radius:6px;
+}
+
+.carrito .total {
+  text-align:right;
+  font-weight:700;
+  margin-top:10px;
+}
+
 .todaslasimagenesdelosproductos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -141,13 +221,142 @@ nav ul li a:hover {
   border: none;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+
   font-weight: 600;
 }
 
 .todaslasimagenesdelosproductos-container button:hover {
   background-color: #d63384;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.producto img {
+  max-width: 100%;
+  height: 180px; /* todas las imágenes iguales */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 10px;
+}
+
+button, .botoncomprarshots {
+  background: linear-gradient(135deg, #ff9eb5, #ff5c8a);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover, .botoncomprarshots:hover {
+  background: linear-gradient(135deg, #e14a4a, #c0265c);
+  transform: translateY(-3px);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fffaf7;
+  color: #333;
+}
+
+h2.postresdisponibles-título {
+  text-align: center;
+  margin: 2rem 0;
+  color: #c0392b;
+}
+
+section.postreschicos, 
+section.vasokinder, 
+section.vasocafe, 
+section.vasofrutilla,
+section.vasooreo,
+section.vasochocotorta {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+section.postreschicos:hover, 
+section.vasokinder:hover, 
+section.vasocafe:hover,
+section.vasofrutilla:hover,
+section.vasooreo:hover,
+section.vasochocotorta:hover {
+  transform: translateY(-4px);
+}
+
+button {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e14a4a;
+}
+
+#carrito {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border: 2px solid #e4bf9c;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+#carrito h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.carrito-items {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: .5rem;
+}
+
+.carrito-items button {
+  background-color: #c0392b;
+  padding: 6px 12px;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 /* - SLOGAN con animación - desvanece */
@@ -167,20 +376,20 @@ nav ul li a:hover {
 
 /* -FOOTER -*/
 footer {
-  background-color: #ffe0ec;
+  background-color: #facfdf;
   text-align: center;
   padding: 2rem 1rem;
   margin-top: 2rem;
 }
 
 footer h4 {
-  color: #7a2c58;
+  color: #975179;
   margin-bottom: 0.5rem;
 }
 
 .footerderechos {
   font-size: 0.9rem;
-  color: #555;
+  color: #8b5e5e;
 }
 
 .footercontainer-grid {
@@ -189,19 +398,29 @@ footer h4 {
   gap: 1rem;
   margin: 1.5rem 0;
   text-align: center;
+  color: #41393d;
 }
 
 .footer-container-flex {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 10px;
 }
 
 .logotipoFooter {
   width: 40px;
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
 .logotipoFooter:hover {
   transform: scale(1.2);
+}
+
+.logotipoFooter{
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
